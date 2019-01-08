@@ -31,7 +31,7 @@ const addToMealPlan = () => {
     breakfast: 3,
     lunch: 2,
     supper: 3,
-    dessert: 2,
+    dessert: 2
   }
 
   return selectMeals(mealRations)
