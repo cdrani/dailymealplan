@@ -1,0 +1,14 @@
+{
+  "name": "meal_plan",
+  "version": "1.0.0",
+  "description": "twitter bot that serves up a meal plan",
+  "main": "index.js",
+  "author": "cdrainxv",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "dot-env": "0.0.1",
+    "express": "4.16.4",
+    "twit": "2.2.11"
+  }
+}
