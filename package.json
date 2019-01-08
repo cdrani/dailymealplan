@@ -2,6 +2,9 @@
   "name": "meal_plan",
   "version": "1.0.0",
   "description": "twitter bot that serves up a meal plan",
+  "scripts": {
+    "serve": "node server.js"
+  },
   "main": "index.js",
   "author": "cdrainxv",
   "license": "MIT",
