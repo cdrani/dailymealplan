@@ -13,13 +13,13 @@ const mealPlan = () => {
     Array(columns).fill(spaces)
   ]
 
-  const mealTypes = ['breakfast', 'lunch', 'supper', 'dessert']
+  const mealTypes = ['breakfast', 'lunch', 'tea', 'coffee']
   const dailyMeals = addToMealPlan()
 
   rows.forEach((row, i) => {
     const meal = dailyMeals[mealTypes[i]]
     for (let j = 0; j < meal.length; j++) {
-      row[j] = randomArrayElement(meal)
+      row[j] = meal[j]
     }
   })
 

@@ -3,17 +3,17 @@ const { randomArrayElement } = require('./utils')
 const meals = {
   breakfast: ['🍳', '🍎', '🍌', '🍞', '🥞', '🥓'],
   lunch: ['🍕', '🌯', '🌮', '🥙', '🥗', '🥔', '🥓', '🍔'],
-  supper: ['🍜', '🍖', '🍲', '🍗', '🍚', '🍙', '🥓', '🥗'],
-  dessert: ['🍦', '🍧', '🍰', '🍡', '🍠', '🍘', '🥓', '🍮'],
-  beverage: ['🥛', '🚰', '🍷', '🍸', '🍺', '🍻', '🥃', '🍵', '🥓']
+  tea: ['🍜', '🍖', '🍲', '🍗', '🍚', '🍙', '🥓', '🥗'],
+  coffee: ['🍦', '🍧', '🍰', '🍡', '🍠', '🍘', '🥓', '🍮'],
+  beverage: ['🥛', '🚰', '🍷', '🍸', '🍺', '🍻', '🥃']
 }
 
 const selectMeals = mealRations => {
   const mealPlan = {
     breakfast: [],
     lunch: [],
-    supper: [],
-    dessert: []
+    tea: [],
+    coffee: []
   }
 
   Object.keys(mealRations).forEach(option => {
@@ -30,8 +30,8 @@ const addToMealPlan = () => {
   const mealRations = {
     breakfast: 3,
     lunch: 2,
-    supper: 3,
-    dessert: 2
+    tea: 3,
+    coffee: 2
   }
 
   return selectMeals(mealRations)
