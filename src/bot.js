@@ -4,7 +4,7 @@ const { addToMealPlan } = require('./meals')
 const { randomInt, randomArrayElement } = require('./utils')
 
 const mealPlan = () => {
-  const spaces = '     '
+  const spaces = ' '
   const columns = 4
   const rows = [
     Array(columns).fill(spaces),
@@ -24,15 +24,14 @@ const mealPlan = () => {
   })
 
   const tray = `
-
-  Breakfast | ${rows[0].join('  ')} 
----------------------------------
-Lunch      | ${rows[1].join('   ')} 
----------------------------------
-Tea          | ${rows[2].join('   ')} 
----------------------------------
-Coffee     | ${rows[3].join('   ')} 
----------------------------------
+  Breakfast | ${rows[0].join(' ')} 
+-------------------------------------------
+Lunch       | ${rows[1].join(' ')} 
+-------------------------------------------
+Tea           | ${rows[2].join(' ')} 
+-------------------------------------------
+Coffee     | ${rows[3].join(' ')} 
+-------------------------------------------
 `
 
   const T = new Twit(config)
